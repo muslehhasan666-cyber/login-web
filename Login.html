@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+    
+  <style type="text/css">
+   body{
+     display: flex;
+     height: 100vh;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+     background: black;}
+   .kotak{
+     width: 350px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border: 2px solid #00ff00;
+     background-color: black;
+     box-shadow: 0 0 90px #0f0;
+     gap: 20px;
+   }
+   h4{color:#0f0;
+     display: flex;
+     margin:  20px;
+   }
+   input{
+     display: flex;
+     background-color: transparent;
+     border: 2px solid #00ff00;
+     color: black;
+     width: 300px;
+     box-sizing: border-box;
+     margin: px;
+     }
+     
+     input::placeholder{color:#00ff00;
+     
+     }
+     button{
+       background-color: transparent;
+       border: 2px solid #0f0;
+       color: #0f0;
+       margin: 10px;
+       width: 50%;
+     }
+     
+  </style>
+</head>
+<body>
+  <form action="/login" method="POST">
+ <div class="kotak">
+   <h4>halo selamat datang</h4>
+   <input type="text" placeholder="masukan nama anda" name="nama"/>
+   <input type="password" placeholder="masukkan password"name="pass"/>
+   <button type="submit">login</button>
+ </div>
+ </form>
+</body>
+</html>
